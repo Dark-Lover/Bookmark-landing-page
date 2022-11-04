@@ -1,12 +1,17 @@
 @import "./../../styles/comp/header";
 
 .header {
-  // background-color: $secondary;
+  background-color: ghostwhite;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
 
   .container {
     max-width: 1024px;
     margin: 0 auto;
     padding: 1rem 3rem;
+    min-height: 76px;
     @include flex(row, space-between);
     .logo {
       width: 148px;
@@ -18,12 +23,19 @@
       width: 18px;
       height: 15px;
       position: relative;
+
       @include lg {
         display: none;
       }
     }
     .menu_items {
       @include flex(row);
+      @include xs {
+        display: none;
+      }
+      @include lg {
+        display: flex;
+      }
       cursor: pointer;
       font-size: 1rem;
       gap: 1.5rem;
