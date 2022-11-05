@@ -1,0 +1,41 @@
+@import "../base/colors";
+@import "../base/breakpoints";
+@import "../base/mixins";
+
+%btn {
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 500;
+  letter-spacing: 0.04rem;
+  @include xs {
+    font-size: 0.8rem;
+    padding: 1rem 0.5rem;
+  }
+  @include md {
+    font-size: 1rem;
+    padding: 1rem;
+  }
+}
+.btn_primary {
+  @extend %btn;
+  color: white;
+  background-color: $primary;
+  border: 1px solid transparent;
+  &:hover {
+    color: $primary;
+    border: solid 1px $primary;
+    background-color: white;
+  }
+}
+
+.btn_outlined {
+  @extend %btn;
+  color: $black-neutral;
+  background-color: $white-neutral;
+  box-shadow: 0px 4px 20px -5px $neutral;
+  border: 1px solid transparent;
+  &:hover {
+    border: solid 1px $black-neutral;
+    background-color: white;
+  }
+}
