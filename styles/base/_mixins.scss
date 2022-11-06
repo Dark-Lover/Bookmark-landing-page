@@ -1,8 +1,13 @@
 // Positioning
 
-@mixin flex($direction: column, $justify: center, $align: center) {
+@mixin flex($direction: column, $justify: unset, $align: unset) {
   display: flex;
   justify-content: $justify;
   align-items: $align;
   flex-direction: $direction;
+}
+
+@mixin desc($align: left) {
+  @extend .lead;
+  text-align: center;
 }

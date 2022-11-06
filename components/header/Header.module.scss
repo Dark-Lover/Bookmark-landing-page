@@ -12,7 +12,7 @@
     margin: 0 auto;
     padding: 1rem 3rem;
     min-height: 76px;
-    @include flex(row, space-between);
+    @include flex(row, space-between, center);
     .logo {
       width: 148px;
       height: 25px;
@@ -29,7 +29,7 @@
       }
     }
     .menu_items {
-      @include flex(row);
+      @include flex(row, center, center);
       @include xs {
         display: none;
       }

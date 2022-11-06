@@ -1,9 +1,6 @@
 import Image from "next/image";
+import { IMobileMenu } from "../../types/types";
 import styles from "./MobileMenu.module.scss";
-
-interface IMobileMenu {
-  handleToggle: (toggle: boolean) => void;
-}
 
 function MobileMenu({ handleToggle }: IMobileMenu) {
   return (

@@ -11,7 +11,7 @@
   .mobile_logo {
     width: 100%;
     position: relative;
-    @include flex(row, space-between);
+    @include flex(row, space-between, center);
     padding: 1rem 3rem;
     min-height: 76px;
     .m_logo {

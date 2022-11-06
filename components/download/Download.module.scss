@@ -1,0 +1,12 @@
+@import "./../../styles/comp/download";
+@import "./../../styles/ui/fonts";
+
+.download {
+  padding: 0rem 1.5rem 2rem 1.5rem;
+  .download_heading {
+    @include flex(column, center, center);
+    .lead {
+      text-align: center;
+    }
+  }
+}

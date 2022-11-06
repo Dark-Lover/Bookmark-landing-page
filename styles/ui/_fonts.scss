@@ -1,0 +1,25 @@
+@import "../base/colors";
+@import "../base/breakpoints";
+@import "../base/mixins";
+
+.lead {
+  color: $neutral;
+  line-height: 1.5em;
+  padding-bottom: 2rem;
+  max-width: 450px;
+  @include flex(row, center, center);
+  @include xs {
+    font-size: 1rem;
+  }
+  @include md {
+    font-size: 1.3rem;
+  }
+}
+
+.title {
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: $dark-blue;
+  margin-bottom: 2rem;
+  text-align: center;
+}
