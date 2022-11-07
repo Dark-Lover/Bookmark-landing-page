@@ -46,6 +46,9 @@ function Features() {
           <div className={styles.features_content}>
             <h2 className={styles.title}> {featuresData[selectedId].title}</h2>
             <p className={styles.desc}>{featuresData[selectedId].desc}</p>
+            <a href="#" className={styles.btn_primary}>
+              More Info
+            </a>
           </div>
         </div>
         {/* End Feature detail comp */}

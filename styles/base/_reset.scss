@@ -111,3 +111,19 @@ input {
 a {
   text-decoration: none;
 }
+
+button {
+  border: none;
+  background-color: white;
+  font-family: "Rubik", sans-serif;
+}
+input {
+  border: none;
+  outline: none;
+}
+::placeholder {
+  color: hsla(0, 3%, 69%, 0.982);
+  font-weight: 400;
+  font-family: "Rubik", sans-serif;
+  letter-spacing: 0.02rem;
+}

@@ -1,13 +1,56 @@
 @import "./../../styles/comp/download";
 @import "./../../styles/ui/fonts";
 @import "./../../styles/ui/btn";
+@import "./../../styles/comp/faq";
 
 .faqs {
   padding: 2rem 0;
+  @include flex(column, center, center);
   .faqs_heading {
     @include flex(column, center, center);
     .lead {
       text-align: center;
+    }
+  }
+  .dropdown_faq {
+    padding: 2rem 0.5rem;
+    width: 320px;
+    @include md {
+      width: 400px;
+    }
+    @include lg {
+      width: 700px;
+    }
+    @include flex(column, center, center);
+    .faq_card {
+      @include flex(column, center, center);
+      width: 100%;
+      .question {
+        font-size: 1rem;
+        line-height: 1.5rem;
+        border-top: 1px solid $light-neutral;
+        border-bottom: 1px solid $light-neutral;
+        width: 100%;
+        @include flex(row, space-between, center);
+        padding: 1.5rem 0;
+        img {
+          cursor: pointer;
+        }
+        @include md {
+          font-size: 1.2rem;
+        }
+      }
+      .answer {
+        font-size: 1rem;
+        padding: 1rem 0;
+        line-height: 1.7rem;
+        color: $meduim_neutral;
+        @include md {
+          font-size: 1.2rem;
+          padding: 2rem 0;
+          line-height: 2rem;
+        }
+      }
     }
   }
 }

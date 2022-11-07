@@ -1,0 +1,70 @@
+@import "./../../styles/comp/footer";
+@import "./../../styles/ui/fonts";
+@import "./../../styles/ui/btn";
+
+.footer {
+  .contact {
+    @include flex(column, center, center);
+    gap: 1rem;
+    background-color: $primary;
+    padding: 3rem 1rem;
+    p,
+    h2 {
+      color: white;
+    }
+    .small {
+      font-size: 0.8rem;
+      letter-spacing: 0.35rem;
+    }
+    .form {
+      @include flex(column, center);
+      gap: 1rem;
+      width: 300px;
+      input,
+      button {
+        padding: 1rem;
+        border-radius: 5px;
+      }
+      button {
+        background-color: $secondary;
+        color: white;
+        font-weight: 500;
+        letter-spacing: 0.03rem;
+        cursor: pointer;
+        &:hover {
+          background-color: lighten($secondary, 5%);
+        }
+      }
+    }
+  }
+  .social {
+    @include flex(column, center, center);
+    gap: 1rem;
+    padding: 3rem 1rem;
+    width: 100%;
+    background-color: $dark-blue;
+    position: relative;
+    .logo {
+      width: 148px;
+      height: 25px;
+      position: relative;
+    }
+    .footer_menu {
+      > li {
+        color: white;
+        margin-bottom: 1.3rem;
+        cursor: pointer;
+        text-align: center;
+        font-weight: 400;
+        font-size: 0.9rem;
+      }
+    }
+    .icons {
+      @include flex(row, center, center);
+      gap: 1rem;
+      img {
+        cursor: pointer;
+      }
+    }
+  }
+}

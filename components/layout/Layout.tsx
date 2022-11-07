@@ -1,4 +1,5 @@
 import Head from "next/head";
+import Footer from "../footer/Footer";
 import Header from "../header/Header";
 import styles from "./Layout.module.scss";
 interface ILayout {
@@ -14,7 +15,7 @@ function Layout({ children }: ILayout) {
       </Head>
       <Header />
       <main className={styles.container}>{children}</main>
-      {/* FOOTER */}
+      <Footer />
     </div>
   );
 }
