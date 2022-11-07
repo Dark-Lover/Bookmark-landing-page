@@ -1,0 +1,13 @@
+@import "./../../styles/comp/download";
+@import "./../../styles/ui/fonts";
+@import "./../../styles/ui/btn";
+
+.faqs {
+  padding: 2rem 0;
+  .faqs_heading {
+    @include flex(column, center, center);
+    .lead {
+      text-align: center;
+    }
+  }
+}

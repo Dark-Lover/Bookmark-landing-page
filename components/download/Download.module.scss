@@ -1,5 +1,6 @@
 @import "./../../styles/comp/download";
 @import "./../../styles/ui/fonts";
+@import "./../../styles/ui/btn";
 
 .download {
   padding: 0rem 1.5rem 2rem 1.5rem;
@@ -7,6 +8,31 @@
     @include flex(column, center, center);
     .lead {
       text-align: center;
+    }
+  }
+  .extensions {
+    @include flex(column, center, center);
+    margin: 1rem 0;
+    @include lg {
+      @include flex(row, center, center);
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+    .card_offset_1 {
+      background-color: red;
+    }
+    .card {
+      @include flex(column, center, center);
+      margin: 1rem 0;
+      width: 280px;
+      box-shadow: 2px 4px 10px 2px rgba(0, 0, 0, 0.1);
+      border-radius: 5px;
+      padding: 2rem 0;
+      h2,
+      a {
+        margin-top: 1.5rem;
+        margin-bottom: 1rem;
+      }
     }
   }
 }
