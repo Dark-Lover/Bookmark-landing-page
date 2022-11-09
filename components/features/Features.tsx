@@ -2,11 +2,21 @@ import styles from "./Features.module.scss";
 import { featuresData } from "./../../data/features";
 import Image from "next/image";
 import { useState } from "react";
-
+import { motion } from "framer-motion";
 function Features() {
   const [selectedId, setSelectedId] = useState<number>(0);
   return (
-    <section className={styles.features}>
+    <motion.section
+      className={styles.features}
+      initial="hidden"
+      whileInView="visible"
+      viewport={{ once: true }}
+      transition={{ duration: 0.3 }}
+      variants={{
+        visible: { opacity: 1, x: 0 },
+        hidden: { opacity: 0, x: -300 },
+      }}
+    >
       <div className={styles.features_heading}>
         <h2 className={styles.title}> Features</h2>
         <p className={styles.desc}>
@@ -53,7 +63,7 @@ function Features() {
         </div>
         {/* End Feature detail comp */}
       </div>
-    </section>
+    </motion.section>
   );
 }
 

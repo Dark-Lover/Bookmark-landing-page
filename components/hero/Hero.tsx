@@ -1,9 +1,19 @@
 import Image from "next/image";
 import styles from "./Hero.module.scss";
-
+import { motion } from "framer-motion";
 function Hero() {
   return (
-    <section className={styles.hero}>
+    <motion.section
+      className={styles.hero}
+      initial="hidden"
+      whileInView="visible"
+      viewport={{ once: true }}
+      transition={{ duration: 0.3 }}
+      variants={{
+        visible: { opacity: 1, x: 0 },
+        hidden: { opacity: 0, x: 300 },
+      }}
+    >
       <div className={styles.hero_image}>
         <Image
           src="/images/illustration-hero.svg"
@@ -27,7 +37,7 @@ function Hero() {
           </a>
         </div>
       </div>
-    </section>
+    </motion.section>
   );
 }
 export default Hero;

@@ -18,6 +18,10 @@ export interface IFaq {
   answer: string;
 }
 
+export interface ILayout {
+  children: React.ReactNode;
+}
+
 export interface IMobileMenu {
   handleToggle: (toggle: boolean) => void;
 }

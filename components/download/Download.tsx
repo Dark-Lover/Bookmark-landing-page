@@ -1,10 +1,20 @@
 import Image from "next/image";
 import styles from "./Download.module.scss";
 import { extensions } from "../../data/extensions";
-
+import { motion } from "framer-motion";
 function Download() {
   return (
-    <section className={styles.download}>
+    <motion.section
+      className={styles.download}
+      initial="hidden"
+      whileInView="visible"
+      viewport={{ once: true }}
+      transition={{ duration: 0.3 }}
+      variants={{
+        visible: { opacity: 1, scale: 1 },
+        hidden: { opacity: 0, scale: 0 },
+      }}
+    >
       <div className={styles.download_heading}>
         <h2 className={styles.title}> Download Extension</h2>
         <p className={styles.lead}>
@@ -42,7 +52,7 @@ function Download() {
           );
         })}
       </div>
-    </section>
+    </motion.section>
   );
 }
 

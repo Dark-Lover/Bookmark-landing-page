@@ -2,9 +2,9 @@ import Head from "next/head";
 import Footer from "../footer/Footer";
 import Header from "../header/Header";
 import styles from "./Layout.module.scss";
-interface ILayout {
-  children: React.ReactNode;
-}
+import { motion } from "framer-motion";
+import { ILayout } from "../../types/types";
+
 function Layout({ children }: ILayout) {
   return (
     <div>

@@ -1,7 +1,4 @@
-@import "./../../styles/comp/footer";
-@import "./../../styles/ui/fonts";
-@import "./../../styles/ui/btn";
-
+@import "./../../styles/ui/utilities";
 .footer {
   .contact {
     @include flex(column, center, center);
