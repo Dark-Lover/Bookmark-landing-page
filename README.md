@@ -12,12 +12,12 @@ Bookmark is a NextJs with Typescript Frontend project (Landing Page).
 
 ## Color Reference
 
-| Color     | Hex                                                              |
-| --------- | ---------------------------------------------------------------- |
-| Primary   | ![#0a192f](https://via.placeholder.com/10/5368df?text=+) #5368df |
-| Secondary | ![#f8f8f8](https://via.placeholder.com/10/fa5757?text=+) #fa5757 |
-| Neutral   | ![#262c45](https://via.placeholder.com/10/9194a1?text=+) #9194a1 |
-| Dark Blue | ![#00d1a0](https://via.placeholder.com/10/262c45?text=+) #262c45 |
+| Color     | Hex     |
+| --------- | ------- |
+| Primary   | #5368df |
+| Secondary | #fa5757 |
+| Neutral   | #9194a1 |
+| Dark Blue | #262c45 |
 
 ### 🛠 Technologies used in this project
 
@@ -32,6 +32,6 @@ Bookmark is a NextJs with Typescript Frontend project (Landing Page).
 - Responsiveness on mobile devices.
 - Animations
 
-## Programmer
+## Developer
 
 - [dark-lover](https://www.github.com/dark-lover)
