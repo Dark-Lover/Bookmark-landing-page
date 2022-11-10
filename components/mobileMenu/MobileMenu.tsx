@@ -1,10 +1,21 @@
 import Image from "next/image";
 import { IMobileMenu } from "../../types/types";
 import styles from "./MobileMenu.module.scss";
+import { motion } from "framer-motion";
 
 function MobileMenu({ handleToggle }: IMobileMenu) {
   return (
-    <div className={styles.mobile_menu}>
+    <motion.div
+      className={styles.mobile_menu}
+      initial="hidden"
+      whileInView="visible"
+      viewport={{ once: true }}
+      transition={{ duration: 0.2 }}
+      variants={{
+        visible: { opacity: 1, x: 0 },
+        hidden: { opacity: 0, x: 200 },
+      }}
+    >
       <div className={styles.mobile_logo}>
         <div className={styles.m_logo}>
           <Image
@@ -28,7 +39,7 @@ function MobileMenu({ handleToggle }: IMobileMenu) {
         <li>CONTACT</li>
         <li className={styles.m_btn}>LOGIN</li>
       </ul>
-    </div>
+    </motion.div>
   );
 }
 

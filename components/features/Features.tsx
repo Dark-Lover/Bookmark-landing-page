@@ -44,7 +44,17 @@ function Features() {
           </ul>
         </div>
         {/* Feature detail comp */}
-        <div className={styles.features_details}>
+        <motion.div
+          className={styles.features_details}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
+          transition={{ duration: 0.2 }}
+          variants={{
+            visible: { opacity: 1, scale: 1 },
+            hidden: { opacity: 0, scale: 0 },
+          }}
+        >
           <div className={styles.features_image}>
             <Image
               src={`/images/${featuresData[selectedId].img}.svg`}
@@ -60,7 +70,7 @@ function Features() {
               More Info
             </a>
           </div>
-        </div>
+        </motion.div>
         {/* End Feature detail comp */}
       </div>
     </motion.section>

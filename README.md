@@ -1,34 +1,37 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+Welcome! 👋
 
-## Getting Started
+## Bookmark landing page
 
-First, run the development server:
+<p align="center"> Frontend Mentor Challenge </p>
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+![Design preview for the Bookmark landing page coding challenge](https://www11.0zz0.com/2022/11/10/21/991833949.jpg)
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### About the project
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+Bookmark is a NextJs with Typescript Frontend project (Landing Page).
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+## Color Reference
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+| Color     | Hex                                                              |
+| --------- | ---------------------------------------------------------------- |
+| Primary   | ![#0a192f](https://via.placeholder.com/10/5368df?text=+) #5368df |
+| Secondary | ![#f8f8f8](https://via.placeholder.com/10/fa5757?text=+) #fa5757 |
+| Neutral   | ![#262c45](https://via.placeholder.com/10/9194a1?text=+) #9194a1 |
+| Dark Blue | ![#00d1a0](https://via.placeholder.com/10/262c45?text=+) #262c45 |
 
-## Learn More
+### 🛠 Technologies used in this project
 
-To learn more about Next.js, take a look at the following resources:
+- [NextJs](https://nextjs.org/)
+- [Typescript](https://nextjs.org/)
+- [Sass](https://sass-lang.com/)
+- [Framer Motion](https://www.framer.com/motion/)
+- [Vercel](https://vercel.com/dashboard)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### Features and Performance
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+- Responsiveness on mobile devices.
+- Animations
 
-## Deploy on Vercel
+## Programmer
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+- [dark-lover](https://www.github.com/dark-lover)
