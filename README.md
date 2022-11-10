@@ -22,7 +22,7 @@ Bookmark is a NextJs with Typescript Frontend project (Landing Page).
 ### 🛠 Technologies used in this project
 
 - [NextJs](https://nextjs.org/)
-- [Typescript](https://nextjs.org/)
+- [Typescript](https://www.typescriptlang.org/)
 - [Sass](https://sass-lang.com/)
 - [Framer Motion](https://www.framer.com/motion/)
 - [Vercel](https://vercel.com/dashboard)
