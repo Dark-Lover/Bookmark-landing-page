@@ -34,4 +34,4 @@ Bookmark is a NextJs with Typescript Frontend project (Landing Page).
 
 ## Developer
 
-- [dark-lover](https://www.github.com/dark-lover)
+- [Houssine](https://www.github.com/dark-lover)
